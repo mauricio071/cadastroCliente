@@ -1,0 +1,49 @@
+Criação do banco:
+
+create database googlu;
+
+-------------------------
+
+Criação da tabela:
+
+CREATE TABLE financeiro (
+	id	 	 INT	 AUTO_INCREMENT	 PRIMARY KEY	,
+	nome		 VARCHAR(80)				,
+	cpf		 VARCHAR(14)                            ,
+	email		 VARCHAR(100)                           ,
+	plano		 VARCHAR(80)				,			
+	pagamento        VARCHAR(80)    			,
+	obs		 TEXT	
+);
+
+--------------------------
+
+Inserção de registro
+
+INSERT INTO financeiro VALUES (
+	1				 ,
+	"Maurício Naoki Nakamura”	 ,
+	"40921587634"			 ,
+	"exemplo@gmail.com"		 ,
+	"Parcelar em 5x de R$ 105,00"	 ,
+	"Boleto Bancário"		 ,
+	"Precisa de um atendimento específica"	
+);
+
+--------------------------
+
+Listagem de dados
+
+SELECT * FROM financeiro WHERE id = 1;
+
+--------------------------
+
+Exclusão de dados
+
+DELETE FROM financeiro WHERE id = 1;
+
+--------------------------
+
+Alteração de dados
+
+UPDATE financeiro SET cpf = 000.000.000-00 WHERE id = 1;

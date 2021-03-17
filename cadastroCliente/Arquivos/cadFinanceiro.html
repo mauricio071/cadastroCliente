@@ -1,0 +1,116 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 0px)" href="styleFinanceiro.css">
+    <title>Pagamento</title>
+</head>
+
+	<body>
+	<header color="#E25822" id="faixa">
+            <h4 id="txtF">Formulário de Cadastro - Cliente</h4>	
+            </header>
+            <div id="menu">
+				<div id="fun" class="efeito efeitof-1">
+					<a href="C:\wamp64\www\[2A MATUTINO] GoogluStation\GUILHERME BELMONTE ROCHA [20594453]\ARQUIVOS\cadastrofuncionario.html">Funcion&aacute;rio</a>
+				</div>
+				<div id="pron" class="efeito efeito-1">
+					<a href="">Prontu&aacute;rio</a>
+				</div>
+				<div id="fin" class="efeito efeito-1">
+						<a href="C:\wamp64\www\[2A MATUTINO] GoogluStation\Maurício Naoki Nakamura [20691564]\Arquivos\cadFinanceiro.html">Financeiro</a>
+					</div>
+				<div id="age" class="efeito efeitoa-1">
+					<a href="C:\wamp64\www\[2A MATUTINO] GoogluStation\Bryan de Lima Carvalho [2130415-7]\Arquivos\agenda.html">Agenda</a>
+				</div>	
+            </div>
+        <h2 class="pag">Efetuar o pagamento</h2>
+		<div id="pagf">
+        <form  class="formulario" action="gravarFinanceiro.php" method="post" enctype="multipart/form-data">
+            Nome:
+            <input type="text"
+                   name="nome"
+                   id="nome"
+				   class="borda"
+                   maxlength="80"
+                   size="80"
+                   placeholder=" Coloque o seu nome completo aqui"
+                   required>
+            <br><br>
+            CPF:
+            <input type="text"
+                   name="cpf"
+                   id="cpf"
+				   class="borda bordaCpf"
+                   maxlength="14"
+				   placeholder="Ex: 000.000.000-00"
+                   required>
+            <br><br>
+            Email:
+            <input type="email"
+                   name="email"
+                   id="email"
+				   class="borda"
+                   maxlength="100"
+                   placeholder="exemplo@gmail.com"
+                   required>
+            <br><br>
+            <fieldset >
+                <legend >Selecione o plano desejado</legend>
+                <input type="radio"
+                       name="plano"
+                       id="plano"
+					   
+                       value="Pagamento único de R$ 500,00"
+                       checked>Pagamento único de R$ 500,00<br><br>
+                <input type="radio"
+                       name="plano"
+                       id="plano"
+                       value="Parcelar em 5x de R$ 105,00">Parcelar em 5x de R$ 105,00<br><br>
+                <input type="radio"
+                       name="plano"
+                       id="plano"
+                       value="Parcelar em 10x de R$ 60,00">Parcelar em 10x de R$ 60,00
+                <hr>
+                Selecione a forma de pagamento:
+                <select name="pagamento" required>
+                    <option value="">Escolha</option>
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Boleto Bancário">Boleto Bancário</option>
+                    <option value="Cartão de crédito - Visa">Cartão de crédito - Visa</option>
+                    <option value="Cartão de crédito - Mastercard">Cartão de crédito - Mastercard</option>
+                    <option value="Pagseguro">Pagseguro</option>
+                </select>
+            </fieldset>
+            <br>
+            Observações:<br>
+            <textarea name="obs"
+                      id="obs"
+					  class="borda bordaObs"
+                      cols="50"
+                      rows="10">
+                    </textarea>
+            <br>
+			<hr>
+            <input type="submit" value="Concluir" style="margin-top: 8px; margin-left: 225px; margin-right: 5px;">
+            <input type="reset" value="Limpar" >
+        </form>
+		</div>
+		<div class="rodap">
+                <h4>Ajuda</h4>
+                <ul>
+                    <li> <a href="faleconosco.html">Fale Conosco</a> </li>
+                </ul>
+                <h4>Sobre</h4>
+                <ul>
+                    <li> <a href="nossaempresa.html">Nossa Empresa</a> </li>
+                </ul>
+                <h4>Carreira</h4>
+                <ul class="ul1" style="position: relative; right: 75px;">	
+                <li> <a href="coaching.html">Coaching</a> </li>
+                <li> <a href="intercambio.html">Intercâmbio</a> </li>
+                <li> <a href="treinamento.html">Treinamentos</a> </li>
+             </ul>
+        </div>
+    </body>
+</html>
